@@ -2,17 +2,17 @@ var request = require('request');
 
 const post_to_khh = (kiosk_sender, kiosk_message) =>{
     request.post(
-        'http://local-kioskhomehub.com/slack/events',
+        'http://kioskhomehub.com/slack/events',
         { json: { message: kiosk_message, sender : kiosk_sender } },
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
-                console.log(body);
+                //console.log(body);
             }
         }
     );
 }
 
-post_to_khh('AB', "Sending message");
+post_to_khh('SLACK_BOT', "Instantiated");
 
 const { createEventAdapter } = require('@slack/events-api');
 const slackSigningSecret = 'f40c74e90ef401272e0685de0d769df8';
