@@ -1,0 +1,27 @@
+{
+  "name": "slackbot_02",
+  "version": "1.0.0",
+  "description": "Slackbot for Message Handling",
+  "main": "index.js",
+  "dependencies": {
+    "@slack/events-api": "^2.3.4",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syedam1/slackbot.git"
+  },
+  "keywords": [
+    "slack"
+  ],
+  "author": "syed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syedam1/slackbot/issues"
+  },
+  "homepage": "https://github.com/syedam1/slackbot#readme"
+}
