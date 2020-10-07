@@ -4,7 +4,7 @@ var request = require('request');
 const post_to_khh = (kiosk_sender, kiosk_receiver, kiosk_message, kiosk_attachments) =>{
   console.log("MEssage received "+kiosk_message); 
     request.post(
-        'http://local-kioskhomehub.com/slack/events',
+        'http://kioskhomehub.com/slack/events',
         { json: { receiver:kiosk_sender, channel:kiosk_sender,text:kiosk_message,link:kiosk_attachments } },
         function (error, response, body) {
             if (!error && response.statusCode == 200) {
